@@ -1,0 +1,24 @@
+{
+  "languageserver": {
+    "____clangd": {
+      "command": "clangd",
+      "rootPatterns": ["compile_flags.txt", "compile_commands.json", ".vim/", ".git/", ".hg/"],
+      "filetypes": ["c", "cpp", "objc", "objcpp", "hpp"]
+    },
+    "ccls": {
+    "command": "ccls",
+    "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp", "hpp"],
+    "rootPatterns": [".ccls", "compile_commands.json", ".git/", ".hg/"],
+    "initializationOptions": {
+        "cache": {
+          "directory": "/tmp/ccls"
+        }
+      }
+    }
+  },
+  "python.pythonPath": "/home/takahiro/dotfiles/bin/python_path_pyright.sh",
+  "python.formatting.provider": "black",
+  "python.formatting.blackPath": "~/.local/bin/black",
+  "python.formatting.blackArgs": ["--line-length","120"],
+  "coc.preferences.formatOnSaveFiletypes": ["python"]
+}
