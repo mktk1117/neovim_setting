@@ -15,8 +15,10 @@ sudo apt install ripgrep -y
 
 pip3 install python-language-server
 
-wget https://github.com/neovim/neovim/releases/latest/download/nvim.appimage ./bin/
-chmod u+x bin/nvim.appimage
+wget https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
+mkdir -p bin
+mv nvim.appimage bin/
+
 
 pip3 install neovim
 
