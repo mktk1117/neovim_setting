@@ -2,6 +2,9 @@
   repo = 'Shougo/dein.vim'
 
 [[plugins]]
+  repo = 'nvim-neotest/nvim-nio'
+
+[[plugins]]
 repo = "neoclide/coc.nvim"
 merged = 0
 rev = "release"
